@@ -52,7 +52,7 @@ echo PHP_EOL;
 
 while(true)
 {
-    $player->playerHand($player, $npc);
+    $player->pickOneCard($player, $npc);
     echo "♡-♦=♤-♣=♡-♦=♤-♣=♡-♦=♤-♣=♡-♦=♤-♣=♡-♦=♤-♣=♡-♦=♤-♣=♡-♦=♤-♣=♡-♦=♤-♣=♡-♦=♤-♣=♡-♦=♤-♣=♡-♦=♤-♣=♡-♦=♤-♣=♡-♦=♤-♣=♡-♦=♤";
     echo PHP_EOL;
 
@@ -80,7 +80,7 @@ while(true)
     echo "♡-♦=♤-♣=♡-♦=♤-♣=♡-♦=♤-♣=♡-♦=♤-♣=♡-♦=♤-♣=♡-♦=♤-♣=♡-♦=♤-♣=♡-♦=♤-♣=♡-♦=♤-♣=♡-♦=♤-♣=♡-♦=♤-♣=♡-♦=♤-♣=♡-♦=♤-♣=♡-♦=♤";
     echo PHP_EOL;
 
-    $npc->npcHand($npc, $player);
+    $npc->pickOneCard($npc, $player);
 
     echo "Player: ";
     foreach ($player->getCards() as $card) {

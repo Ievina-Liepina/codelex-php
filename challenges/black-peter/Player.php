@@ -18,20 +18,12 @@ class Player
         $this->cards[] = $card;
     }
 //Player picks random card from other player and that card is then deleted from the other player
-    public function playerHand(Player $player, Player $npc): void
+    public function pickOneCard(Player $player, Player $playerTwo): void
     {
-        $cardIndex = array_rand($npc->getCards());
-        $player->cards[] = $npc->cards[$cardIndex];
-        unset($npc->cards[$cardIndex]);
+        $cardIndex = array_rand($playerTwo->getCards());
+        $player->cards[] = $playerTwo->cards[$cardIndex];
+        unset($playerTwo->cards[$cardIndex]);
         $player->disband();
-    }
-//Player picks random card from other player and that card is then deleted from the other player
-    public function npcHand(Player $npc, Player $player): void
-    {
-        $cardIndex = array_rand($player->getCards());
-        $npc->cards[] = $player->cards[$cardIndex];
-        unset($player->cards[$cardIndex]);
-        $npc->disband();
     }
 //put away cards with similar symbol and color
     public function disband()
