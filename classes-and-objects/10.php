@@ -2,7 +2,8 @@
 /*
 https://github.com/codelex-io/php-syllabus/blob/main/php-basics/classes-and-objects/video-store.php
 
-The goal of this optional exercise is to design and implement a simple inventory control system for a small video rental store. Define least two classes: a class Video to model a video and a class VideoStore to model the actual store.
+The goal of this optional exercise is to design and implement a simple inventory control system for a small video rental
+ store. Define least two classes: a class Video to model a video and a class VideoStore to model the actual store.
 
 Assume that a Video may have the following state:
 
