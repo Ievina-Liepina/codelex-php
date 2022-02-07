@@ -22,7 +22,7 @@ class Card
     {
         return $this->symbol;
     }
-
+//sets color to clubs and spades symbol
     public function setColor(): string
     {
         if($this->getSuit() === '♠' || $this->getSuit() === '♣')
@@ -36,9 +36,9 @@ class Card
 
         return $this->color;
     }
-
+//displays how card will look
     public function getDisplayValue(): string
     {
-        return "{$this->symbol}.{$this->suit}";
+        return "{$this->symbol}{$this->suit}";
     }
 }

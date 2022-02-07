@@ -17,7 +17,7 @@ class Player
     {
         $this->cards[] = $card;
     }
-
+//Player picks random card from other player and that card is then deleted from the other player
     public function playerHand(Player $player, Player $npc): void
     {
         $cardIndex = array_rand($npc->getCards());
@@ -25,7 +25,7 @@ class Player
         unset($npc->cards[$cardIndex]);
         $player->disband();
     }
-
+//Player picks random card from other player and that card is then deleted from the other player
     public function npcHand(Player $npc, Player $player): void
     {
         $cardIndex = array_rand($player->getCards());
@@ -33,7 +33,7 @@ class Player
         unset($player->cards[$cardIndex]);
         $npc->disband();
     }
-
+//put away cards with similar symbol and color
     public function disband()
     {
         $symbols = [];
