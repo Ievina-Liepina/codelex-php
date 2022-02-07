@@ -1,0 +1,5 @@
+Reference - https://www.w3schools.com/php/php_if_else.asp
+Operators - https://www.w3schools.com/php/php_operators.asp
+Switch - Reference - https://www.w3schools.com/php/php_switch.asp
+
+If, else & elseif is commonly used to determine if 2 values meet the given requirements. For example, if variable $x is equals to 10 or if variable $x is 10 and $y is 20

@@ -1,0 +1,12 @@
+Reference - https://www.w3schools.com/php/php_variables.asp
+
+Variable is a container that contains information of the value and it`s data type.
+
+String
+Integer
+Float (floating point numbers - also called double)
+Boolean
+Array
+Object
+NULL
+Custom data type

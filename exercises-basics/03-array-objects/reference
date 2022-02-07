@@ -1,0 +1,10 @@
+Reference - https://www.w3schools.com/php/php_arrays.asp
+
+Array or object is a container that contains multiple sets of values.
+
+Definition of an array
+
+<?php
+
+$items = []; // Since 5.6 version
+$list = array(); // old way
