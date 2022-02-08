@@ -42,7 +42,6 @@ the average rating,
 and whether it is checked out or on the shelves.
  */
 
-
 class Application
 {
     private $store;
@@ -50,14 +49,14 @@ class Application
     {
         $this->store = new VideoStore();
         while (true) {
-            echo "Choose the operation you want to perform \n";
-            echo "Choose 0 for EXIT\n";
-            echo "Choose 1 to fill video store\n";
-            echo "Choose 2 to rent video (as user)\n";
-            echo "Choose 3 to return video (as user)\n";
-            echo "Choose 4 to list inventory\n";
+            echo "Choose the operation you want to perform: " . PHP_EOL;
+            echo "[0] EXIT" . PHP_EOL;
+            echo "[1] Fill video store" . PHP_EOL;
+            echo "[2] Rent video (as user)" . PHP_EOL;
+            echo "[3] Return video (as user)" . PHP_EOL;
+            echo "[4] List inventory" . PHP_EOL;
 
-            $command = (int)readline();
+            $command = (int)readline(">> ");
 
             switch ($command) {
                 case 0:
